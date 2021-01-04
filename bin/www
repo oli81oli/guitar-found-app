@@ -43,5 +43,5 @@ server.on('error', error => {
 });
 
 server.listen(port, '0.0.0.0', () => {
-  console.log(`Listening on http://localhost:${process.env.port}`);
+  console.log(`Listening on http://localhost:${port}`);
 });
