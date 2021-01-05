@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const http = require('http');
+const https = require('https');
 
 let app = require('../app');
 
@@ -21,7 +21,7 @@ app.use((err, req, res, next) => {
   }
 });
 
-let server = http.createServer(app);
+let server = https.createServer(app);
 let port = process.env.PORT || 4000
 
 server.on('error', error => {
